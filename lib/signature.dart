@@ -76,11 +76,11 @@ class SignatureState extends State<Signature> {
 
     if (widget.width != null || widget.height != null) {
       //IF DOUNDARIES ARE DEFINED, USE LIMITED BOX
-      return Center(
-          child: LimitedBox(
-              maxWidth: maxWidth,
-              maxHeight: maxHeight,
-              child: signatureCanvas));
+      return LimitedBox(
+        maxWidth: maxWidth,
+        maxHeight: maxHeight,
+        child: signatureCanvas,
+      );
     } else {
       //IF NO BOUNDARIES ARE DEFINED, USE EXPANDED
       return Expanded(child: signatureCanvas);

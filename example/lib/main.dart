@@ -14,9 +14,9 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final SignatureController _controller = SignatureController(
-    penStrokeWidth: 5,
-    penColor: Colors.red,
-    exportBackgroundColor: Colors.blue,
+    penStrokeWidth: 4,
+    penColor: Colors.blue,
+    exportBackgroundColor: Colors.white,
   );
 
   @override
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
               Signature(
                 controller: _controller,
                 height: 300,
-                backgroundColor: Colors.lightBlueAccent,
+                backgroundColor: Colors.white,
               ),
               //OK AND CLEAR BUTTONS
               Container(
